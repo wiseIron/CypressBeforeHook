@@ -18,3 +18,7 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+before(()=>{
+    cy.task('log', 'Before hook is executed')
+})
